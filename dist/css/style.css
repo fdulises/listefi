@@ -1,0 +1,18 @@
+#header .nav-bar{
+	background-color: #1976D2;
+	color: #f9f9f9;
+}
+#header .nav-bar a {
+    color: #f9f9f9;
+}
+#header .btn-sadw .line {background-color: #fff;}
+@media all and (max-width: 800px){
+	#mainnav[data-state="show"] {
+		display: block !important;
+		width: 100%;
+	}
+	#mainnav[data-state="show"] li {
+		display: block;
+		width: 100%
+	}
+}

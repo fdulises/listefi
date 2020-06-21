@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>AppVentas - Pagina de Configuracion</title>
+	<link rel="stylesheet" href="css/listefi-fuentes.css" />
+	<link rel="stylesheet" href="css/listefi.css" />
+	<link rel="stylesheet" href="css/listefi-tema.css" />
+	<script src="js/listefi.js"></script>
+	<script src="js/helpers.js"></script>
+	<script src="js/funciones.js"></script>
+</head>
+<body>
+	<header class="nav-bar nav-primary">
+		<div class="nav-brand"><a href="index.html">AppVentas</a></div>
+		<button data-estado="open" type="button" class="btn-sadw" id="actionNav">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
+		<ul class="bx-right hide-m">
+			<li><a href="../"><span class="icon-link"></span> Ver Sitio</a></li>
+			<li><a href="acceso.html"><span class="icon-exit"></span> Salir</a></li>
+		</ul>
+	</header>
+	<article>
+		<aside class="nav-abs" id="leftNav">
+			<ul>
+				<li class="hide-min-m">
+					<a href="../"><span class="icon-link"></span> Ver Sitio</a>
+				</li>
+				<li class="hide-min-m">
+					<a href="acceso.html"><span class="icon-exit"></span> Salir</a>
+				</li>
+				<li>
+                    <a href="index.html"><span class="icon-home3"></span> Inicio</a>
+					<a href="configuracion.html"><span class="icon-cog"></span> Configuración</a>
+					<a href="lista.html"><span class="icon-list-numbered"></span>  Listas</a>
+                    <a href="pagos.html"><span class="icon-credit-card"></span>  Pagar</a>
+					<a href="envio.html"><span class="icon-airplane"></span> Envio</a>
+					<a href="vendedores.html"><span class="icon-drawer"></span> Gestion de Vendedores</a>
+					<a href="especifico.html"><span class="icon-droplet"></span> Tablero Especifico</a>
+				</li>
+			</ul>
+		</aside>
+		<div class="container-r clearfix" id="cont">
+			<form action="?guardar" method="post" class="container cont-white cont-700 simpleform">
+		<h1><span class="icon-cog"></span> Configuración del sitio</h1>
+		<div class="form-sec">
+			<label for="title">Titulo</label>
+			<input type="text" name="title" class="form-in">
+		</div>
+		<div class="form-sec">
+			<label for="descrip">Descripcion</label>
+			<textarea name="descrip" class="form-in" id="descrip"></textarea>
+		</div>
+		<div class="form-sec">
+			<label for="url">Dirección</label>
+			<input type="text" name="url" class="form-in">
+		</div>
+		<div class="form-sec">
+			<label for="email">Correo</label>
+			<input type="text" name="email" class="form-in">
+		</div>
+		<div class="form-sec">
+			<label for="theme_name">Nombre del Tema</label>
+			<input type="text" name="theme_name" class="form-in">
+		</div>
+		<div class="form-sec">
+			<label for="theme_dir">Directorio del Tema</label>
+			<input type="text" name="theme_dir" class="form-in">
+		</div>
+		<div class="form-sec">
+			<label for="conf_session_attempts">Intentos de inicio de sesión permitidos</label>
+			<input type="text" name="conf_session_attempts" class="form-in">
+		</div>
+		<button type="submit" name="button" class="btn btn-primary">Guardar Cambios</button>
+	</form>
+			<footer class="container cont-700 mg-sec tx-center">
+				<h6>AppVentas &copy 2017</h6>
+			</footer>
+		</div>
+	</article>
+</body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Listefi - Frontend Framework</title>
+	<link rel="stylesheet" href="src/css/fonts.css">
+	<link rel="stylesheet" href="src/css/listefi.css">
+	<link rel="stylesheet" href="src/css/liweditor.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/highlight-monokai.css">
+
+	<link rel="icon" href="favicon.ico">
+</head>
+<body>
+	<header id="header">
+		<nav class="nav-bar">
+			<div class="container">
+				<div class="nav-brand">
+					<a href="index.html">LISTEFI</a>
+				</div>
+				<button id="btnshownav" class="btn-sadw hide-min-b bx-right">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</button>
+				<ul id="mainnav" class="hide-b bx-right">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="ejemplos.html">Ejemplos</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div id="" class="pd-sec">
+		<div class="container">
+			<div class="gd-30 gd-b-100 tx-center">
+				<img src="img/listefi.jpg" alt="">
+			</div>
+			<div class="gd-70 gd-b-100 pd-sec tx-center">
+				<h1 class="tx-center">Listefi Frontend Framework</h1>
+				<div class="">
+					<h3>Listefi es un Kit de ayuda para el desarrollo de sitios y aplicaciones web adaptables a dispositivos mobiles</h3>
+				</div>
+				<div class="mg-sec">
+					<a href="https://github.com/fdulises/listefi" class="btn btn-default size-l">Descargar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Implementación</h2>
+			<p>Para empezar a usar Listefi en tu proyecto es necesario descargar los archivos fuente, copiarlos en el directorio de tu proyecto y enlazarlos debidamente desde HTML.</p>
+			<h3>Solo CSS</h3>
+			<pre><code>&lt;link rel="stylesheet" href="src/css/listefi.css"&gt;<br>&lt;link rel="stylesheet" href="src/css/fonts.css"&gt;</code></pre>
+			<h3>Funcionalidades Javascript</h3>
+			<pre><code>&lt;script src="src/js/listefi.js"&gt;&lt;/script&gt;</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Tipografia</h2>
+			<div class="">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+				<a>Enlace</a>
+				<em>Enfasis</em>
+				<small>Pequeñita</small>
+				<strong>Negrita</strong>
+				<u>Subrayado</u>
+				<s>Tachado</s>
+
+				<h1>Encabezado</h1>
+				<h2>Encabezado</h2>
+				<h3>Encabezado</h3>
+				<h4>Encabezado</h4>
+				<h5>Encabezado</h5>
+				<h6>Encabezado</h6>
+
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+					<cite>- Lo que sea</cite>
+				</blockquote>
+			</div>
+			<pre><code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit&lt;/p&gt;<br><br>&lt;a&gt;Enlace&lt;/a&gt;<br>&lt;em&gt;Enfasis&lt;/em&gt;<br>&lt;small&gt;Pequeñita&lt;/small&gt;<br>&lt;strong&gt;Negrita&lt;/strong&gt;<br>&lt;u&gt;Subrayado&lt;/u&gt;<br>&lt;s&gt;Tachado&lt;/s&gt;<br><br>&lt;h1&gt;Encabezado&lt;/h1&gt;<br>&lt;h2&gt;Encabezado&lt;/h2&gt;<br>&lt;h3&gt;Encabezado&lt;/h3&gt;<br>&lt;h4&gt;Encabezado&lt;/h4&gt;<br>&lt;h5&gt;Encabezado&lt;/h5&gt;<br>&lt;h6&gt;Encabezado&lt;/h6&gt;<br><br>&lt;blockquote&gt;<br>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit.&lt;/p&gt;<br>&lt;cite&gt;- Lo que sea&lt;/cite&gt;<br>&lt;/blockquote&gt;</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Listas</h2>
+			<div class="">
+				<ul>
+					<li>Elemenento #1 de la lista</li>
+					<li>Elemenento #2 de la lista</li>
+					<li>
+						Elemenento #3 de la lista
+						<ul>
+							<li>Elemenento #1 de la lista</li>
+							<li>Elemenento #2 de la lista</li>
+							<li>Elemenento #3 de la lista</li>
+							<li>Elemenento #4 de la lista</li>
+							<li>Elemenento #5 de la lista</li>
+						</ul>
+					</li>
+					<li>Elemenento #4 de la lista</li>
+					<li>Elemenento #5 de la lista</li>
+				</ul>
+				<ol>
+					<li>Elemenento #1 de la lista</li>
+					<li>Elemenento #2 de la lista</li>
+					<li>
+						Elemenento #3 de la lista
+						<ol>
+							<li>Elemenento #1 de la lista</li>
+							<li>Elemenento #2 de la lista</li>
+							<li>Elemenento #3 de la lista</li>
+							<li>Elemenento #4 de la lista</li>
+							<li>Elemenento #5 de la lista</li>
+						</ol>
+					</li>
+					<li>Elemenento #4 de la lista</li>
+					<li>Elemenento #5 de la lista</li>
+				</ol>
+			</div>
+			<pre><code>&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #1 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #2 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Elemenento #3 de la lista<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #1 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #2 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #3 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #4 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #5 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #4 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #5 de la lista&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;ol&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #1 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #2 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Elemenento #3 de la lista<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;ol&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #1 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #2 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #3 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #4 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #5 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/ol&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #4 de la lista&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Elemenento #5 de la lista&lt;/li&gt;<br>&lt;/ol&gt;<br></code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Tablas</h2>
+			<div class="table-container">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Columna #1</th>
+							<th>Columna #2</th>
+							<th>Columna #3</th>
+							<th>Columna #4</th>
+							<th>Columna #5</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+						</tr>
+						<tr>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+						</tr>
+						<tr>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+							<td>Celda #n</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<pre><code class="html">&lt;div class="table-container"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;table class="table"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;thead&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;Columna #1&lt;/th&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;Columna #2&lt;/th&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;Columna #3&lt;/th&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;Columna #4&lt;/th&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;th&gt;Columna #5&lt;/th&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/thead&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tbody&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;tr&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;td&gt;Celda #n&lt;/td&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/tbody&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/table&gt;<br>&lt;/div&gt;</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Botones</h2>
+			<div class="">
+				<button class="btn size-s">Boton de Acción</button>
+				<button class="btn">Boton de Acción</button>
+				<button class="btn size-l">Boton de Acción</button>
+				<button class="btn size-s btn-default">Boton de Acción</button>
+				<button class="btn btn-default">Boton de Acción</button>
+				<button class="btn size-l btn-default">Boton de Acción</button>
+				<button class="btn size-s btn-primary">Boton de Acción</button>
+				<button class="btn btn-primary">Boton de Acción</button>
+				<button class="btn size-l btn-primary">Boton de Acción</button>
+				<button class="btn size-s btn-acent">Boton de Acción</button>
+				<button class="btn btn-acent">Boton de Acción</button>
+				<button class="btn size-l btn-acent">Boton de Acción</button>
+			</div>
+			<pre><code>&lt;button class="btn size-s"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn size-l"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn size-s btn-default"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn btn-default"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn size-l btn-default"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn size-s btn-primary"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn btn-primary"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn size-l btn-primary"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn size-s btn-acent"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn btn-acent"&gt;Boton de Acción&lt;/button&gt;<br>&lt;button class="btn size-l btn-acent"&gt;Boton de Acción&lt;/button&gt;</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Formularios</h2>
+			<div class="">
+				<div class="form-sec">
+					<label for="campo1">Campo 1</label>
+					<input type="text" name="campo1" id="campo1" class="form-in" />
+					<span class="icon icon-user form-decoration"></span>
+				</div>
+				<div class="form-sec">
+					<label for="campo1-1">Campo 1.1</label>
+					<input type="text" name="campo1-1" id="campo1-1" class="form-in" data-estado="error" />
+					<span class="icon icon-user form-decoration"></span>
+				</div>
+				<div class="form-sec">
+					<label for="campo1-2">Campo 1.2</label>
+					<input type="text" name="campo1-2" id="campo1-2" class="form-in" data-estado="success" />
+					<span class="icon icon-user form-decoration"></span>
+				</div>
+				<div class="form-sec">
+					<label for="campo1-3">Campo 1.3</label>
+					<input type="text" name="campo1-3" id="campo1-3" class="form-in" disabled />
+					<span class="icon icon-user form-decoration"></span>
+				</div>
+				<div class="form-sec">
+					<label for="campo2">Campo 2</label>
+					<input type="text" name="campo2" id="campo2" class="form-in" />
+					<span class="icon icon-key form-decoration"></span>
+				</div>
+				<div class="form-sec">
+					<label for="campo3">Campo 3</label>
+					<select id="campo3" name="campo3" class="form-in">
+						<option>Seleccione una opcion</option>
+						<option>Opcion numero 1</option>
+						<option>Opcion numero 2</option>
+						<option>Opcion numero 3</option>
+						<option>Opcion numero 4</option>
+					</select>
+				</div>
+				<div class="form-sec">
+					<label for="campo4">Campo 4</label>
+					<textarea rows="5" name="campo4" id="campo4" class="form-in"></textarea>
+				</div>
+				<div class="form-sec">
+					<label for="campo5" class="form-in-check"><input type="checkbox" name="campo5" id="campo5" /> Campo 5</label>
+				</div>
+				<div class="form-sec">
+					<div class="form-check">
+						<input type="checkbox" id="test1" />
+						<label for="test1">Red</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" id="test2" checked="checked" />
+						<label for="test2">Yellow</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" id="test3" disabled />
+						<label for="test3">Purple</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" id="test4" checked="checked" disabled />
+						<label for="test4">Orange</label>
+					</div>
+					<div class="form-radio">
+						<input name="testr1" type="radio" id="test5" checked="checked" />
+						<label for="test5">A</label>
+						<input name="testr1" type="radio" id="test6" />
+						<label for="test6">B</label>
+						<input name="testr2" type="radio" id="test7" disabled />
+						<label for="test7">C</label>
+						<input name="testr2" type="radio" id="test8" checked="checked" disabled />
+						<label for="test8">D</label>
+					</div>
+				</div>
+				<div class="form-sec">
+					<div class="toggle-group">
+						<input name="on-off-switch" type="checkbox" id="on-off-switch" checked="checked">
+						<label for="on-off-switch">
+							<span class="aural">Show:</span> Toggle Switch
+						</label>
+						<div class="onoffswitch pull-right" aria-hidden="true">
+						<div class="onoffswitch-label">
+							<div class="onoffswitch-inner"></div>
+							<div class="onoffswitch-switch"></div>
+						</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<pre><code>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;label for="campo1"&gt;Campo 1&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;input type="text" name="campo1" id="campo1" class="form-in" /&gt;<br>&nbsp;&nbsp; &nbsp;&lt;span class="icon icon-user form-decoration"&gt;&lt;/span&gt;<br>&lt;/div&gt;<br>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;label for="campo1-1"&gt;Campo 1.1&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;input type="text" name="campo1-1" id="campo1-1" class="form-in" data-estado="error" /&gt;<br>&nbsp;&nbsp; &nbsp;&lt;span class="icon icon-user form-decoration"&gt;&lt;/span&gt;<br>&lt;/div&gt;<br>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;label for="campo1-2"&gt;Campo 1.2&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;input type="text" name="campo1-2" id="campo1-2" class="form-in" data-estado="success" /&gt;<br>&nbsp;&nbsp; &nbsp;&lt;span class="icon icon-user form-decoration"&gt;&lt;/span&gt;<br>&lt;/div&gt;<br>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;label for="campo1-3"&gt;Campo 1.3&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;input type="text" name="campo1-3" id="campo1-3" class="form-in" disabled /&gt;<br>&nbsp;&nbsp; &nbsp;&lt;span class="icon icon-user form-decoration"&gt;&lt;/span&gt;<br>&lt;/div&gt;<br>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;label for="campo2"&gt;Campo 2&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;input type="text" name="campo2" id="campo2" class="form-in" /&gt;<br>&nbsp;&nbsp; &nbsp;&lt;span class="icon icon-key form-decoration"&gt;&lt;/span&gt;<br>&lt;/div&gt;<br>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;label for="campo3"&gt;Campo 3&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;select id="campo3" name="campo3" class="form-in"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;option&gt;Seleccione una opcion&lt;/option&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;option&gt;Opcion numero 1&lt;/option&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;option&gt;Opcion numero 2&lt;/option&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;option&gt;Opcion numero 3&lt;/option&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;option&gt;Opcion numero 4&lt;/option&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/select&gt;<br>&lt;/div&gt;<br>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;label for="campo4"&gt;Campo 4&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;textarea rows="5" name="campo4" id="campo4" class="form-in"&gt;&lt;/textarea&gt;<br>&lt;/div&gt;<br>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;label for="campo5" class="form-in-check"&gt;&lt;input type="checkbox" name="campo5" id="campo5" /&gt; Campo 5&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="form-check"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input type="checkbox" id="test1" /&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for="test1"&gt;Red&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="form-check"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input type="checkbox" id="test2" checked="checked" /&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for="test2"&gt;Yellow&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="form-check"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input type="checkbox" id="test3" disabled /&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for="test3"&gt;Purple&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="form-check"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input type="checkbox" id="test4" checked="checked" disabled /&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for="test4"&gt;Orange&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="form-radio"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input name="testr1" type="radio" id="test5" checked="checked" /&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for="test5"&gt;A&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input name="testr1" type="radio" id="test6" /&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for="test6"&gt;B&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input name="testr2" type="radio" id="test7" disabled /&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for="test7"&gt;C&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input name="testr2" type="radio" id="test8" checked="checked" disabled /&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for="test8"&gt;D&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div class="form-sec"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="toggle-group"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;input name="on-off-switch" type="checkbox" id="on-off-switch" checked="checked"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;label for="on-off-switch"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;span class="aural"&gt;Show:&lt;/span&gt; Toggle Switch<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/label&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class="onoffswitch pull-right" aria-hidden="true"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class="onoffswitch-label"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class="onoffswitch-inner"&gt;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class="onoffswitch-switch"&gt;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&lt;/div&gt;<br><br></code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Sistema de rejillas fluidas</h2>
+			<div class="container gridexample">
+				<div class="gd-100">100%</div>
+				<div class="gd-50">50%</div>
+				<div class="gd-50">50%</div>
+				<div class="gd-33">33.33%</div>
+				<div class="gd-33">33.33%</div>
+				<div class="gd-33">33.33%</div>
+				<div class="gd-25">25%</div>
+				<div class="gd-25">25%</div>
+				<div class="gd-25">25%</div>
+				<div class="gd-25">25%</div>
+				<div class="gd-20">20%</div>
+				<div class="gd-20">20%</div>
+				<div class="gd-20">20%</div>
+				<div class="gd-20">20%</div>
+				<div class="gd-20">20%</div>
+				<div class="gd-16">16.66%</div>
+				<div class="gd-16">16.66%</div>
+				<div class="gd-16">16.66%</div>
+				<div class="gd-16">16.66%</div>
+				<div class="gd-16">16.66%</div>
+				<div class="gd-16">16.66%</div>
+				<div class="gd-90">90%</div>
+				<div class="gd-10">10%</div>
+				<div class="gd-80">80%</div>
+				<div class="gd-20">20%</div>
+				<div class="gd-70">70%</div>
+				<div class="gd-30">30%</div>
+				<div class="gd-60">60%</div>
+				<div class="gd-40">40%</div>
+			</div>
+			<pre><code class="html">&lt;div class="container"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-100"&gt;100%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-50"&gt;50%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-50"&gt;50%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-33"&gt;33.33%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-33"&gt;33.33%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-33"&gt;33.33%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-25"&gt;25%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-25"&gt;25%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-25"&gt;25%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-25"&gt;25%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-90"&gt;90%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-10"&gt;10%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-80"&gt;80%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-70"&gt;70%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-30"&gt;30%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-60"&gt;60%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-40"&gt;40%&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Rejillas adaptables</h2>
+			<div class="container gridexample">
+				<div class="gd-50 gd-b-100">50% - 100% dispositivos medianos</div>
+				<div class="gd-50 gd-b-100">50% - 100% dispositivos medianos</div>
+				<div class="gd-50 gd-m-100">50% - 100% dispositivos pequeños</div>
+				<div class="gd-50 gd-m-100">50% - 100% dispositivos pequeños</div>
+				<div class="gd-50 gd-s-100">50% - 100% dispositivos chicos</div>
+				<div class="gd-50 gd-s-100">50% - 100% dispositivos chicos</div>
+			</div>
+			<pre><code class="html">&lt;div class="container"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-100"&gt;100%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-50"&gt;50%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-50"&gt;50%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-33"&gt;33.33%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-33"&gt;33.33%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-33"&gt;33.33%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-25"&gt;25%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-25"&gt;25%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-25"&gt;25%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-25"&gt;25%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-16"&gt;16.66%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-90"&gt;90%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-10"&gt;10%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-80"&gt;80%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-20"&gt;20%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-70"&gt;70%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-30"&gt;30%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-60"&gt;60%&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="gd-40"&gt;40%&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Mensajes de alerta</h2>
+			<div class="">
+				<div class="alert">
+					<strong>¡Bien hecho!</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit.
+				</div>
+				<div class="alert alert-success">
+					<strong>¡Bien hecho!</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit.
+				</div>
+				<div class="alert alert-error">
+					<strong>¡Bien hecho!</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit.
+				</div>
+				<div class="alert alert-info">
+					<strong>¡Bien hecho!</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit.
+				</div>
+			</div>
+			<pre><code>&lt;div class="alert"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;strong&gt;¡Bien hecho!&lt;/strong&gt; Lorem ipsum dolor sit amet consectetur adipiscing elit.<br>&lt;/div&gt;<br>&lt;div class="alert alert-success"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;strong&gt;¡Bien hecho!&lt;/strong&gt; Lorem ipsum dolor sit amet consectetur adipiscing elit.<br>&lt;/div&gt;<br>&lt;div class="alert alert-error"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;strong&gt;¡Bien hecho!&lt;/strong&gt; Lorem ipsum dolor sit amet consectetur adipiscing elit.<br>&lt;/div&gt;<br>&lt;div class="alert alert-info"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;strong&gt;¡Bien hecho!&lt;/strong&gt; Lorem ipsum dolor sit amet consectetur adipiscing elit.<br>&lt;/div&gt;</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960 bg-gray">
+			<h2>Cards</h2>
+			<div class="container cont-400 card">
+				<div class="card-frame">
+					<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+				</div>
+			</div>
+			<pre><code class="html">&lt;div class="container cont-400 card"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-frame"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+			<div class="container cont-400 card">
+				<div class="card-header">
+					<h4>Titulo de la card</h4>
+				</div>
+				<div class="card-frame">
+					<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+				</div>
+			</div>
+			<pre><code class="html">&lt;div class="container cont-400 card"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-header"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h4&gt;Titulo de la card&lt;/h4&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-frame"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+			<div class="container cont-400 card">
+				<div class="card-header">
+					<h4>Titulo de la card</h4>
+				</div>
+				<div class="card-list">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</div>
+				<div class="card-list">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</div>
+				<div class="card-list">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</div>
+			</div>
+			<pre><code class="html">&lt;div class="container cont-400 card"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-header"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h4&gt;Titulo de la card&lt;/h4&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-list"&gt;Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-list"&gt;Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-list"&gt;Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+			<div class="container cont-400 card">
+				<div class="card-header">
+					<h4>Titulo de la card</h4>
+				</div>
+				<img src="holder.js/400x300?random=yes&auto=yes" class="card-cover">
+				<div class="card-frame">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</div>
+				<div class="card-footer tx-right">
+					<button type="button" class="btn btn-primary">Aceptar</button>
+					<button type="button" class="btn">Cancelar</button>
+				</div>
+			</div>
+			<pre><code class="html">&lt;div class="container cont-400 card"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-header"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h4&gt;Titulo de la card&lt;/h4&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;img src="holder.js/400x300?random=yes&amp;auto=yes" class="card-cover"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-frame"&gt;Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="card-footer tx-right"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;button type="button" class="btn btn-primary"&gt;Aceptar&lt;/button&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;button type="button" class="btn"&gt;Cancelar&lt;/button&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+			<div class="container cont-400 card">
+				<img src="holder.js/400x300?random=yes&auto=yes" class="card-cover">
+				<a href="#" class="card-frame">
+					<div class="card-title tx-center">Lorem ipsum dolor</div>
+					<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+					<p>
+						<button type="button" class="btn size-l btn-block btn-default" name="button">Seguir leyendo</button>
+					</p>
+				</a>
+			</div>
+			<pre><code class="html">&lt;div class="container cont-400 card"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;img src="holder.js/400x300?random=yes&amp;auto=yes" class="card-cover"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a href="#" class="card-frame"&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;div class="card-title tx-center"&gt;Lorem ipsum dolor&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;p&gt;Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;p&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;button type="button" class="btn size-l btn-block btn-default" name="button"&gt;Seguir leyendo&lt;/button&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/a&gt;<br>&lt;/div&gt;</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Barras de navegación</h2>
+			<div class="nav-bar">
+				<div class="container">
+					<div class="nav-brand">
+						<a href="#">TITLE</a>
+					</div>
+					<button class="btn-sadw hide-min-b bx-right">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</button>
+					<ul id="mainnav" class="hide-b bx-right">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Enlace #2</a></li>
+						<li><a href="#">Enlace #3</a></li>
+					</ul>
+				</div>
+			</div>
+			<pre><code class="html">&lt;div class="nav-bar"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="container"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class="nav-brand"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;a href="#"&gt;TITLE&lt;/a&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;button class="btn-sadw hide-min-b bx-right"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;span class="line"&gt;&lt;/span&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;span class="line"&gt;&lt;/span&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;span class="line"&gt;&lt;/span&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/button&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;ul id="mainnav" class="hide-b bx-right"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;&lt;a href="#"&gt;Enlace #2&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;&lt;a href="#"&gt;Enlace #3&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Ventanas modales</h2>
+			<div class="">
+				<button type="button" id="alertame" class="btn btn-default">Simple Alert</button>
+				<button type="button" id="alertame2" class="btn btn-default">Full Alert</button>
+				<button type="button" id="confirmame" class="btn btn-default">Confirmar</button>
+			</div>
+			<script>
+			window.addEventListener("load", function(){
+				//Creamos una ventana modal tipo alert simple
+				document.querySelector("#alertame").addEventListener("click", function(){
+					listefi.alert("Hola mundo");
+				});
+
+				//Creamos una ventana modal tipo alert con encabezado y controles
+				document.querySelector("#alertame2").addEventListener("click", function(){
+					listefi.alert("Hola mundo", "Alerta", [{
+						html: "Aceptar", class: "btn", id: "",
+						action: function(l){l.hide()}
+					}]);
+				});
+
+				//Creamos una ventana modal tipo confirm
+				document.querySelector("#confirmame").addEventListener("click", function(){
+					listefi.confirm("Desea continuar?", "Confirmar: Desea continuar con la operación?", function(respuesta){
+						if(respuesta) alert("Ha seleccionado continuar");
+						else alert("Ha seleccionado no continuar");
+					});
+				});
+			});
+			</script>
+			<pre><code>&lt;button type="button" id="alertame" class="btn btn-default"&gt;Simple Alert&lt;/button&gt;<br>&lt;button type="button" id="alertame2" class="btn btn-default"&gt;Full Alert&lt;/button&gt;<br>&lt;button type="button" id="confirmame" class="btn btn-default"&gt;Confirmar&lt;/button&gt;</code></pre>
+			<pre><code class="javascript">/*Creamos una ventana modal tipo alert simple*/<br>document.querySelector("#alertame").addEventListener("click", function(){<br>&nbsp;&nbsp; &nbsp;listefi.alert("Hola mundo");<br>});<br><br>/*Creamos una ventana modal tipo alert con encabezado y controles*/<br>document.querySelector("#alertame2").addEventListener("click", function(){<br>&nbsp;&nbsp; &nbsp;listefi.alert("Hola mundo", "Alerta", [{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;html: "Aceptar", class: "btn", id: "",<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;action: function(l){l.hide()}<br>&nbsp;&nbsp; &nbsp;}]);<br>});<br><br>/*Creamos una ventana modal tipo confirm*/<br>document.querySelector("#confirmame").addEventListener("click", function(){<br>&nbsp;&nbsp; &nbsp;listefi.confirm("Desea continuar?", "Confirmar: Desea continuar con la operación?", function(respuesta){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;if(respuesta) alert("Ha seleccionado continuar");<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;else alert("Ha seleccionado no continuar");<br>&nbsp;&nbsp; &nbsp;});<br>});</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Editor WYSIWYG</h2>
+			<div class="">
+				<div id="myeditor">
+					<textarea class="form-in" rows="10"><p><img src="img/sports.jpg"></p></textarea>
+				</div>
+			</div>
+			<script type="text/javascript">
+			var myeditor;
+			window.addEventListener("load", function(){
+				myeditor = liweditor("#myeditor");
+			});
+			</script>
+			<h3>Enlazar archivos extra</h3>
+			<pre><code>&lt;link rel="stylesheet" href="src/css/liweditor.css"&gt;<br>&lt;script src="src/js/liweditor.js"&gt;&lt;/script&gt;</code></pre>
+			<h3>HTML</h3>
+			<pre><code class="html">&lt;div id="myeditor"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;textarea class="form-in" rows="10"&gt;&lt;p&gt;&lt;img src="img/sports.jpg"&gt;&lt;/p&gt;&lt;/textarea&gt;<br>&lt;/div&gt;</code></pre>
+			<h3>Inicialización Js</h3>
+			<pre><code>var myeditor = liweditor("#myeditor");<br>//Se requiere llamar el siguiente metodo si se desea obtener el textarea.value
+myeditor.update();</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Slideshow</h2>
+			<div id="myslide" class="li-slide">
+				<ul>
+					<li><a href="img/example/big1.jpg" data-src="img/example/big1.jpg" class="imglightbox"><img src="img/example/big1.jpg" alt=""></a></li>
+					<li><a href="img/example/big2.jpg" data-src="img/example/big2.jpg" class="imglightbox"><img src="img/example/big2.jpg" alt=""></a></li>
+					<li><a href="img/example/big3.jpg" data-src="img/example/big3.jpg" class="imglightbox"><img src="img/example/big3.jpg" alt=""></a></li>
+				</ul>
+				<a class="li-slidebtn bsl"><span class="">&laquo;</span></a>
+				<a class="li-slidebtn bsr"><span class="">&raquo;</span></a>
+			</div>
+			<script type="text/javascript">
+			window.addEventListener("load", function(){
+				var slide = listefi.slideshow({
+					selector: "#myslide",
+					time: 4000,
+					prev:'.bsl',
+					next:'.bsr',
+					auto: true,
+					responsive: true,
+				});
+				imgalery({selector: ".imglightbox"});
+			});
+			</script>
+			<pre><code class="html">&lt;div id="myslide" class="li-slide"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;ul&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;&lt;a href="#a"&gt;&lt;img src="img/example/big1.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;&lt;a href="#b"&gt;&lt;img src="img/example/big2.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;&lt;a href="#c"&gt;&lt;img src="img/example/big3.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp; &nbsp;&lt;a class="li-slidebtn bsl"&gt;&lt;span class=""&gt;&amp;laquo;&lt;/span&gt;&lt;/a&gt;<br>&nbsp;&nbsp; &nbsp;&lt;a class="li-slidebtn bsr"&gt;&lt;span class=""&gt;&amp;raquo;&lt;/span&gt;&lt;/a&gt;<br>&lt;/div&gt;</code></pre>
+			<pre><code>var slide = listefi.slideshow({<br>&nbsp;&nbsp; &nbsp;selector: "#myslide",<br>&nbsp;&nbsp; &nbsp;time: 4000,<br>&nbsp;&nbsp; &nbsp;prev:'.bsl',<br>&nbsp;&nbsp; &nbsp;next:'.bsr',<br>&nbsp;&nbsp; &nbsp;auto: true,<br>&nbsp;&nbsp; &nbsp;responsive: true,<br>});</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Navegación por pestañas</h2>
+			<div id="mytabnav" class="li-slide">
+				<button type="button" name="button" class="btn">Tab #1</button>
+				<button type="button" name="button" class="btn">Tab #2</button>
+				<button type="button" name="button" class="btn">Tab #3</button>
+				<ul>
+					<li>
+						<h4>Contenido Pestaña #1</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						<p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+						<p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+						<p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut</p>
+					</li>
+					<li>
+						<h4>Contenido Pestaña #2</h4>
+						<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+						<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+						<p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+					</li>
+					<li>
+						<h4>Contenido Pestaña #3</h4>
+						<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+						<p>Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.</p>
+					</li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+			window.addEventListener("load", function(){
+				var tabnav = listefi.slideshow({
+					selector: "#mytabnav",
+					auto: false,
+					responsive: false,
+				});
+				document.querySelectorAll("#mytabnav button").forEach(function(e, i){
+					e.addEventListener("click", function(){
+						tabnav.goingTo(i);
+					});
+				});
+			});
+			</script>
+			<pre><code class="html">&lt;div id="mytabnav" class="li-slide"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;button type="button" name="button" class="btn"&gt;Tab #1&lt;/button&gt;<br>&nbsp;&nbsp; &nbsp;&lt;button type="button" name="button" class="btn"&gt;Tab #2&lt;/button&gt;<br>&nbsp;&nbsp; &nbsp;&lt;button type="button" name="button" class="btn"&gt;Tab #3&lt;/button&gt;<br>&nbsp;&nbsp; &nbsp;&lt;ul&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h4&gt;Contenido Pestaña #1&lt;/h4&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h4&gt;Contenido Pestaña #2&lt;/h4&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h4&gt;Contenido Pestaña #3&lt;/h4&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/ul&gt;<br>&lt;/div&gt;</code></pre>
+			<pre><code>var tabnav = listefi.slideshow({<br>&nbsp;&nbsp; &nbsp;selector: "#mytabnav",<br>&nbsp;&nbsp; &nbsp;auto: false,<br>&nbsp;&nbsp; &nbsp;responsive: true,<br>});<br>document.querySelectorAll("#mytabnav button").forEach(function(e, i){<br>&nbsp;&nbsp; &nbsp;e.addEventListener("click", function(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;tabnav.goingTo(i);<br>&nbsp;&nbsp; &nbsp;});<br>});</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>Accordion</h2>
+			<div id="myaccordion" class="li-accordion">
+				<a href="#tab1" class="li-accorh">Seccion #1</a>
+				<div class="tabcont" id="tab1">
+					<p><img src="img/example/big1.jpg" /></p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+					<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+					<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+				</div>
+				<a href="#tab2" class="li-accorh">Seccion #2</a>
+				<div class="tabcont" id="tab2">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+					<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+					<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+				</div>
+				<a href="#tab3" class="li-accorh">Seccion #3</a>
+				<div class="tabcont" id="tab3">
+					<p><img src="img/example/big3.jpg" /></p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+					<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+					<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+				</div>
+			</div>
+			<script type="text/javascript">
+			window.addEventListener("load", function(){
+				new listefi.accordion({
+					selector: "#myaccordion .li-accorh",
+					source: "href",
+					activedefault: 1,
+					keep: true,
+				});
+			});
+			</script>
+			<pre><code class="html">&lt;div id="myaccordion" class="li-accordion"&gt;<br>&nbsp;&nbsp; &nbsp;&lt;a href="#tab1" class="li-accorh"&gt;Seccion #1&lt;/a&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="tabcont" id="tab1"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;&lt;img src="img/example/big1.jpg" /&gt;&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;<br><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&lt;/p&gt;<br><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;a href="#tab2" class="li-accorh"&gt;Seccion #2&lt;/a&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="tabcont" id="tab2"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;<br><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&lt;/p&gt;<br><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;a href="#tab3" class="li-accorh"&gt;Seccion #3&lt;/a&gt;<br>&nbsp;&nbsp; &nbsp;&lt;div class="tabcont" id="tab3"&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;&lt;img src="img/example/big3.jpg" /&gt;&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;<br><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&lt;/p&gt;<br><br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.&lt;/p&gt;<br>&nbsp;&nbsp; &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+			<pre><code class="javascript">new listefi.accordion({<br>&nbsp;&nbsp; &nbsp;selector: "#myaccordion .li-accorh",<br>&nbsp;&nbsp; &nbsp;source: "href",<br>&nbsp;&nbsp; &nbsp;activedefault: 1,<br>&nbsp;&nbsp; &nbsp;keep: true,<br>});</code></pre>
+		</div>
+	</div>
+	<div class="mg-sec">
+		<div class="container cont-960">
+			<h2>InputTag</h2>
+			<div>
+				<input id="tagin" type="input" value="hola,mundo,lorem" placeholder="Escribe las etiquetas" class="form-in">
+			</div>
+			<script type="text/javascript">
+			window.addEventListener("load", function(){
+				new listefi.taginput('#tagin');
+			});
+			</script>
+			<pre><code class="html">&lt;div&gt;<br>&nbsp;&nbsp; &nbsp;&lt;input id="tagin" type="input" value="hola,mundo,lorem" placeholder="Escribe las etiquetas" class="form-in"&gt;<br>&lt;/div&gt;</code></pre>
+			<pre><code class="js">new listefi.taginput('#tagin');</code></pre>
+		</div>
+	</div>
+	<footer id="footer" class="pd-sec">
+		<div class="container tx-center">
+			<div>
+				Listefi &copy; - Creado por <a href="https://twitter.com/fidelulises">Ulises Rendón</a>
+			</div>
+		</div>
+	</footer>
+	<script src="src/js/listefi.js"></script>
+	<script src="src/js/liweditor.js"></script>
+	<script src="src/js/holder.min.js"></script>
+	<script src="js/highlight.pack.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

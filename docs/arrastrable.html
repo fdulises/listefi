@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Set position on pointer drag</title>
+	<style>
+	.fdrag{
+		height: 100px;
+		width: 100px;
+		font-weight: bold;
+		padding: 15px;
+		position: absolute;
+		top: 10%;
+		left: 40%;
+		cursor: move;
+		opacity: 0.8;
+	}
+	.div1{background-color: blue;}
+	.div2{background-color: yellow;}
+	.div3{background-color: red;}
+	</style>
+</head>
+<body>
+	<div class="fdrag div1">Soy arrastrable</div>
+	<div class="fdrag div2">Soy arrastrable</div>
+	<div class="fdrag div3">Soy arrastrable</div>
+	<script src="../src/js/listefi.js"></script>
+	<script>
+	listefi('.div1').addEventListener('mousedown', listefi.pdrag);
+	listefi('.div2').addEventListener('mousedown', listefi.pdrag);
+	listefi('.div3').addEventListener('mousedown', listefi.pdrag);
+	</script>
+</body>
+</html>

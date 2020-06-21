@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Demo basico GET sin datos - Listefi Ajax</title>
+	<script src="../src/js/listefi.js"></script>
+</head>
+<body>
+	<button type="button" id="envio">Enviar peticion</button>
+	<script>
+		var envio = document.querySelector("#envio");
+		envio.addEventListener("click", function(e){
+			e.preventDefault();
+			listefi.ajax({
+				url: "proccess1.php",
+				method: "get",
+				success: function(respuesta){
+					alert(respuesta);
+				}
+			});
+		});
+	</script>
+</body>
+</html>

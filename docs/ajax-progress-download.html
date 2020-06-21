@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Rastreando progreso descarga - Listefi Ajax</title>
+	<script src="../src/js/listefi.js"></script>
+</head>
+<body>
+	<button id="envio">Enviar peticion</button>
+	<progress id="progreso" value="0" max="1"></progress>
+	<div id="proceso"></div>
+	<script>
+		var envio = document.querySelector("#envio");
+		var proceso = document.querySelector("#proceso");
+		var progreso = document.querySelector("#progreso");
+		
+		envio.addEventListener("click", function(){
+			listefi.ajax({
+				url: "content-large.html",
+				method: "get",
+				loadstart: function(){
+					progreso.value = 0;
+					proceso.innerHTML = 'Cargando...';
+				},
+				load: function(){
+					progreso.value = 1;
+					proceso.innerHTML = '';
+				},
+				progress: function(evt){
+					if(evt.lengthComputable) {
+						var percent = evt.loaded/evt.total;
+						progreso.value = percent;
+					}else console.log("Tamaño desconocido");
+				},
+			});
+		});
+	</script>
+</body>
+</html>

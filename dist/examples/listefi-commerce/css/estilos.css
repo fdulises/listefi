@@ -1,0 +1,137 @@
+body{
+	background-color: #f1f4f9;
+}
+.display-flex{
+	display: flex;
+	justify-content: space-between;
+}
+.pd-sec{padding:40px 0}
+.bg-1{
+	background: transparent url(../img/bg-1.png) no-repeat center center fixed;
+	background-size: cover;
+}
+.bg-white{background-color: #fff;}
+.cont-400{max-width: 400px;}
+.cont-500{max-width: 500px;}
+.cont-600{max-width: 600px;}
+.cont-700{max-width: 700px;}
+.cont-800{max-width: 800px;}
+
+
+#cont-sup{
+	background-color: #f0f0f0;
+}
+#menu-supnav{
+	padding: 20px 0;
+	font-size: 20px;
+}
+#menu-supnav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+}
+#logotipo{
+	font-weight: bold;
+	font-size: 30px;
+	color: #444;
+}
+#logotipo a{color: #444;}
+
+#cont-catalog > .container{
+	padding: 0;
+}
+.cards{
+	padding: 3px;
+	font-size: 14px;
+}
+.marco::after, .marco::before, .marco{
+	display: table;
+	clear: both;
+	content: "";
+}
+.cards .marco{
+	background-color: #fff;
+	padding: 8px;
+}
+.cards [class*="gd-"]{
+	padding: 0;
+}
+.cards .cover{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.card-t1 p{margin-bottom: 30px;}
+.card-t1 .marco{
+	display: block;
+	background-color: #fff;
+	margin: 0 20px;
+	padding: 30px;
+}
+.card-t1 .cover {
+    color: #222;
+    font-size: 58px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#servs-call{margin-bottom: 20px;}
+
+#cont-inf{
+	font-size: 16px;
+	background-color: #32313A;
+	color: #f5f5f5;
+	margin-bottom: 0;
+	padding-top: 50px;
+}
+#cont-inf a{
+	color: #fff;
+}
+#cont-inf ul{
+	margin: 0;
+	padding: 0;
+}
+#cont-inf ul li{
+	margin-bottom: 5px;
+}
+.social-icons a {
+	font-size: 16px;
+	display: inline-block;
+	padding: 12px;
+	border-radius: 50%;
+	background-color: #62616A;
+	text-align: center;
+	margin: 0 5px;
+	width: 40px;
+	height: 40px;
+}
+#call-index{padding-bottom: 70px;}
+
+#cont-coment li {
+	margin-bottom: 0;
+	padding-top: 30px;
+	margin-top: 0;
+	padding-bottom: 29px;
+	border-bottom: 1px solid;
+	border-color: #ccc;
+	list-style: none;
+	font-size: 16px;
+}
+#cont-coment ol {
+	margin: 0;
+}
+.coment_autor {
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+.coment_fecha {
+	margin-bottom: 10px;
+	font-size: 0.8em;
+	font-style: oblique;
+	color: #666;
+}
+
+.precio{
+	color: #ff3030;
+	font-weight: bold;
+}

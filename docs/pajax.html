@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Página de inicio</title>
+	<style>
+	@keyframes pagetrans1 {
+	    from {
+			transform: translate(0, -50%);
+			opacity: 0;
+		}
+	    to {
+			transform: translate(0, 0%);
+			opacity: 1;
+		}
+	}
+	[data-animt1]{animation: pagetrans1 1s;}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="pajax.html">Inicio</a></li>
+			<li><a href="pajax1.html">Sección #1</a></li>
+			<li><a href="pajax2.html">Sección #2</a></li>
+			<li><a href="pajax3.html">Sección #3</a></li>
+			<li><a href="pajax4.html">Sección #4</a></li>
+			<li><a href="http://www.google.com.mx" target="_blank">Google</a></li>
+			<li><a href="http://www.twitter.com">Twitter</a></li>
+		</ul>
+	</nav>
+	<main id="maincontent">
+		<h1>
+			Página de inicio
+		</h1>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+		<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+	</main>
+	<footer>
+		<h6>Copyright &copy; 2017</h6>
+	</footer>
+	<script src="../src/js/listefi.js"></script>
+	<script src="../src/js/listefi-pajax.js"></script>
+	<script>
+	listefi.pajax({
+		selector: "nav a",
+		replacecont: ["#maincontent", "title"],
+		imgpreload: true,
+		beforeLoad: function(){listefi.scrollTo(0, 500, false);},
+		affterLoad: function(){
+			var maincontent = document.querySelector("#maincontent");
+			maincontent.setAttribute("data-animt1", "");
+			setTimeout(function(){maincontent.removeAttribute("data-animt1");}, 1000);
+		}
+	});
+	</script>
+</body>
+</html>

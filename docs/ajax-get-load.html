@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>-
+	<meta charset="utf-8" />
+	<title>AJAX</title>
+	<script src="../src/js/listefi.js"></script>
+	<link rel="stylesheet" href="../../css/listefi.css" />
+	<style>
+		@keyframes fadeIn{
+			from{
+				opacity: 0;
+			}
+			to{
+				opacity: 1;
+			}
+		}
+		.aparecer{
+			animation-name: fadeIn;
+			animation-duration: 1s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Obtener contenido por ajax</h1>
+		<div id="contenido">
+			<button id="cargar" class="btn btn-primary">Cargar contenido</button>
+		</div>
+	</div>
+	<script>
+	document.querySelector("#cargar").addEventListener("click", function(){
+		listefi.load("#contenido", "content-simple.html");
+	});
+	</script>
+</body>
+</html>

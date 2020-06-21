@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Demo basico GET Formulario - Listefi Ajax</title>
+	<script src="../src/js/listefi.js"></script>
+</head>
+<body>
+	<form id="form1" method="get" action="proccess1.php">
+		<div>
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre">
+		</div>
+		<div>
+			<label for="email">E-mail</label>
+			<input type="text" name="email" id="email">
+		</div>
+		<div>
+			<label for="telefono">Telefono</label>
+			<input type="text" name="telefono" id="telefono">
+		</div>
+		<div>
+			<label for="asunto">Asunto</label>
+			<input type="text" name="asunto" id="asunto">
+		</div>
+		<div>
+			<label for="mensaje">Mensaje</label>
+			<textarea name="mensaje" id="mensaje"></textarea>
+		</div>
+		<button type="submit">Enviar</button>
+	</form>
+	<script>
+		var formulario = document.querySelector("#form1");
+		formulario.addEventListener("submit", function(e){
+			e.preventDefault();
+			listefi.ajax({
+				url: this.action,
+				method: this.method,
+				data: {
+					nombre: this.nombre.value,
+					email: this.email.value,
+					telefono: this.telefono.value,
+					asunto: this.asunto.value,
+					mensaje: this.mensaje.value,
+				},
+				success: function(respuesta){
+					alert(respuesta);
+				}
+			});
+		});
+	</script>
+</body>
+</html>

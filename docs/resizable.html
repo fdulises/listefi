@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Prueba</title>
+	<link rel="stylesheet" href="../src/css/listefi-resizable.css">
+</head>
+<body>
+	<div class="fres">I'm resizable</div>
+
+	<script src="../src/js/listefi.js"></script>
+	<script src="../src/js/listefi-resizable.js"></script>
+	<script>
+	//Crear elemento resizable
+	listefi.initResize('.fres');
+	//HAcer al elemento arrastrable
+	listefi('.fres').addEventListener('mousedown', listefi.pdrag);
+	</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Rastreando progreso subida - Listefi Ajax</title>
+	<script src="../src/js/listefi.js"></script>
+</head>
+<body>
+	<form id="form1" method="post" action="proccess1.php">
+		<div>
+			<label for="adjunto1">Adjuntar archivo</label>
+			<input type="file" name="adjunto1" id="adjunto1">
+		</div>
+		<div>
+			<label for="adjunto2">Adjuntar archivo</label>
+			<input type="file" name="adjunto2" id="adjunto2">
+		</div>
+		<div>
+			<label for="adjunto3">Adjuntar archivo</label>
+			<input type="file" name="adjunto3" id="adjunto3">
+		</div>
+		<div>
+			<label for="adjunto4">Adjuntar archivo</label>
+			<input type="file" name="adjunto4" id="adjunto4">
+		</div>
+		<div>
+			<label for="adjunto5">Adjuntar archivo</label>
+			<input type="file" name="adjunto5" id="adjunto5">
+		</div>
+		<button type="submit">Enviar</button>
+	</form>
+	<progress id="progreso" value="0" max="1"></progress>
+	<div id="proceso"></div>
+	<script>
+		var formulario = document.querySelector("#form1");
+		var progreso = document.querySelector("#progreso");
+
+		formulario.addEventListener("submit", function(e){
+			e.preventDefault();
+			listefi.ajax({
+				url: this.action,
+				method: this.method,
+				data: new FormData(formulario),
+				loadstart: function(){
+					progreso.value = 0;
+					proceso.innerHTML = 'Cargando...';
+				},
+				load: function(){
+					progreso.value = 1;
+					proceso.innerHTML = '';
+				},
+				uploadProgress: function(evt){
+					if(evt.lengthComputable) {
+						var percent = evt.loaded/evt.total;
+						progreso.value = percent;
+					}else console.log("Tamaño desconocido");
+				},
+			});
+		});
+	</script>
+</body>
+</html>

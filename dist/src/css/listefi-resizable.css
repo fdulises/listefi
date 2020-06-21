@@ -1,0 +1,62 @@
+/*
+* Listefi Frontend Framework v1.0
+* Desarrollado por ULises Rendón
+* https://twitter.com/fidelulises
+* Licencia de uso: https://creativecommons.org/licenses/by-nc/4.0/deed.es
+*/
+.fres {
+	background: cyan;
+	height: 200px;
+	width: 300px;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	cursor: move;
+}
+[class*="fres-"] {
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	position:absolute;
+	border: 1px solid #000;
+}
+.fres-n{
+	left: 50%;
+	top: 0;
+	cursor: ns-resize;
+}
+.fres-s{
+	left: 50%;
+	bottom: 0;
+	cursor: ns-resize;
+}
+.fres-e{
+	right: 0;
+	top: 50%;
+	cursor: ew-resize;
+}
+.fres-w{
+	left: 0;
+	top: 50%;
+	cursor: ew-resize;
+}
+.fres-ne{
+	right: 0;
+	top: 0;
+	cursor: nesw-resize;
+}
+.fres-se{
+	right: 0;
+	bottom: 0;
+	cursor: nwse-resize;
+}
+.fres-nw{
+	left: 0;
+	top: 0;
+	cursor: nwse-resize;
+}
+.fres-sw{
+	left: 0;
+	bottom: 0;
+	cursor: nesw-resize;
+}

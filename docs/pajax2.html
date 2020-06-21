@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Página Sección #2</title>
+	<style>
+	@keyframes pagetrans1 {
+	    from {
+			transform: translate(0, -50%);
+			opacity: 0;
+		}
+	    to {
+			transform: translate(0, 0%);
+			opacity: 1;
+		}
+	}
+	[data-animt1]{animation: pagetrans1 1s;}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="pajax.html">Inicio</a></li>
+			<li><a href="pajax1.html">Sección #1</a></li>
+			<li><a href="pajax2.html">Sección #2</a></li>
+			<li><a href="pajax3.html">Sección #3</a></li>
+			<li><a href="pajax4.html">Sección #4</a></li>
+			<li><a href="http://www.google.com.mx" target="_blank">Google</a></li>
+			<li><a href="http://www.twitter.com">Twitter</a></li>
+		</ul>
+	</nav>
+	<main id="maincontent">
+		<h1>Sección #2</h1>
+		<p>Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.</p>
+
+		<p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc.</p>
+
+		<p>Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus.</p>
+
+		<p>Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo.</p>
+
+		<p>Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit.</p>
+
+		<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit.</p>
+
+		<p>Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis.</p>
+
+		<p><img src="https://source.unsplash.com/random"></p>
+	</main>
+	<footer>
+		<h6>Copyright &copy; 2017</h6>
+	</footer>
+	<script src="../src/js/listefi.js"></script>
+	<script src="../src/js/listefi-pajax.js"></script>
+	<script>
+	listefi.pajax({
+		selector: "nav a",
+		replacecont: ["#maincontent", "title"],
+		imgpreload: true,
+		beforeLoad: function(){listefi.scrollTo(0, 500, false);},
+		affterLoad: function(){
+			var maincontent = document.querySelector("#maincontent");
+			maincontent.setAttribute("data-animt1", "");
+			setTimeout(function(){maincontent.removeAttribute("data-animt1");}, 1000);
+		}
+	});
+	</script>
+</body>
+</html>
